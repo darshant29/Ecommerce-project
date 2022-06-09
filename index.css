@@ -75,6 +75,16 @@
     padding-top: 60px;
 }
 
+#icon{
+    color: #0F001A;
+    font-size:30px;
+    line-height:80px;
+    float:right;
+    margin-right:40px;
+    cursor:pointer;
+    display: none;
+}
+
 
 /* what we do */
 
@@ -108,8 +118,6 @@
     border-radius: 10px;
     margin-left: 52px;
     z-index: 2;
-}
-.card-pack .card-template:hover {
     box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
 }
 .card-pack .card-template .card-img {
@@ -254,6 +262,7 @@
 }
 .client .client-example1 {
     padding-right: 60px;
+    width: 50%;
 }
 .client .client-example1 .client-example-back {
     position: relative;
@@ -271,6 +280,7 @@
 .client .client-example2 {
     padding-left: 180px;
     padding-top: 200px;
+    width: 50%;
 }
 .client .client-example2 img {
     margin-bottom: 44px;
@@ -295,11 +305,17 @@
 }
 .client-app .client-app-pic{
     padding-left: 170px;
+    width: 50%;
+}
+.client-app .client-app-pic img {
+    width: 100%;
+    height: 100%;
 }
 .client-app .client-app-details {
     padding-left: 35px;
     padding-right: 245px;
     text-align: center;
+    width: 50%;
 }
 .client-app .client-app-details span:nth-child(1) {
     font-style: normal;
@@ -377,7 +393,6 @@
     position: relative;
     padding: 56px 125px 0px 125px;
     width: 100%;
-    height: 350px;
     background: #4A99D3;
     color: #FFFFFF;
 }
@@ -451,10 +466,423 @@
 
 /* line  */
 
-.line {
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    background-color: #FFFFFF;
-    top: 4428px;
+
+
+/* Responsive layout 1150  */
+
+@media only screen and (max-width: 1150px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .cont2 {
+        width: 100%;
+    }
+    .home {
+        width: 90%;
+        margin: auto;
+    }
+    .header{
+        margin-right: 0px;
+    }
+    
+    /* card  */
+
+    .card .card2 {
+        width: 90%;
+        margin: auto;
+    }
+    .card2 .card-pack {
+        margin: 140px 0px;
+    }
+    .card2 .card-pack .left > span {
+        margin-left: auto;
+        margin-right: 52px;
+    }
+    .card2 .card-pack .right{
+        flex: 1;
+    }
+
+    /* how it works  */
+
+    .how-it-works {
+        padding: 95px 12%;
+    }
+
+    /* clients  */
+
+    .client .client-example {
+        margin-right: 160px;
+    }
+    .client .client-example1 .client-example-back {
+        width: 550px;
+    }
+    .client .client-example1 .client-example-back img {
+        right: 70px;
+    }
+    .client .client-example2 {
+        padding-top: 140px;
+    }
+    .client-app {
+        width: 90%;
+        margin: auto;
+    }
+    .client-app .client-app-pic {
+        padding: 0px;
+    }
+    .client-app .client-app-pic img {
+        width: 100%;
+        height: 100%;
+    }
+    .client-app .client-app-details {
+        padding: 0px;
+        padding-left: 20px;
+    }
+
+    /* footer  */
+
+    .footer {
+        padding: 56px 70px 0px;
+    }
+    .footer .footer-row-1 {
+        width: 20%;
+    }
+    .footer .footer-row-5 {
+        padding-left: 20px;
+    }
+    .footer .footer-row-3 {
+        padding: 0px 20px;
+    }
+}
+
+/* Responise layout > 940px */
+
+@media only screen and (max-width: 940px) {
+    body{
+        width: 100%;
+    }
+    .home-content {
+        padding-top: 60px;
+        width: 50%;
+    }
+    .home-content span:nth-child(1) {
+        font-size: 45px;
+    }
+    .home-content span:nth-child(2) {
+        font-size: 18px;
+    }
+    .home-content .home-icons {
+        display: flex;
+    }
+    .home-img {
+        width: 50%;
+    }
+    .home-img img {
+        width: 100%;
+    }
+
+    /* card  */
+
+    .card-pack .card-template {
+        height: 445px;
+        width: 320px;
+        margin: auto;
+    }
+    .card-pack .card-template .card-img {
+        height: 200px;
+    }
+    .card .card-blue, .card .card-brown {
+        display: none;
+    }
+    .card-pack .card-template .card-img .img2{
+        max-height: 165px;
+        max-width: 200px;
+        right: 62px;
+    }
+    .card-pack .card-template .card-img .img1{
+        max-height: 105px;
+        max-width: 165px;
+        right: 90px;
+    }
+    .card-pack .card-template .card-img .img3 {
+        max-height: 105px;
+        max-width: 175px;
+        right: 90px;
+    }
+    .card-pack .card-template .card-content > span:nth-child(1) {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    .card-pack .card-template .card-content > span:nth-child(2) {
+        font-size: 14px;
+        margin-bottom: 42px;
+    }
+    .card-pack .card-template .card-content .card-bottom span {
+        font-size: 12px;
+    }
+
+    /* how it works  */
+    .how-it-works {
+        padding: 95px 6%;
+    }
+
+    /* clients  */
+    .client .client-example {
+        margin-right: 12%;
+    }
+    .client .client-example1 .client-example-back {
+        max-width: 480px;
+        max-height: 350px;
+    }
+    .client .client-example1 .client-example-back img {
+        max-width: 100%;
+        max-height: 130%;
+        right: 60px;
+    }
+    .client .client-example2 img {
+        max-height: 40px;
+        max-width: 36px;
+    }
+    .client .client-example2 {
+        padding-left: 130px;
+    }
+    .client .client-example2 span:nth-last-child(2) {
+        font-size: 14px;
+    }
+    .client .client-example2 span:nth-last-child(1) {
+        font-size: 16px;
+    }
+    .client .client-example .buttons {
+        max-height: 70px;
+        max-width: 140px;
+    }
+
+    .client .client-brown {
+        display: none;
+    }
+    .client .client-blue {
+        display: none;
+    }
+    .client-app .client-app-details span:nth-child(1) {
+        font-size: 22px;
+        margin-top: 80px;
+    }
+    .client-app .client-app-details span:nth-child(2){
+        font-size: 14px;
+    }
+    .client-app-button {
+        margin-top: 50px;
+    }
+    .client-app-button > img {
+        max-width: 130px;
+        max-height: 44px;
+    }
+
+    /* footer  */
+    .footer .footer-row-1 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .footer .footer-row-5 {
+        margin-top: 10px;
+    }
+}
+
+/* Responise layout > 690px */
+
+@media only screen and (max-width: 690px) {
+    .home {
+        width: 80%;
+    }
+    #icon {
+        display: block;
+    }
+    .home .home-box {
+        flex-direction: column-reverse;
+    }
+    .header {
+        margin-top: 0;
+    }
+    .home .header .menu {
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: -100%;
+        left: 0px;
+        height: 10vh;
+        text-align: center;
+        transition: all .5s;
+    }
+    .menu.active {
+        top: 80px;
+    }
+    .home .header .menu span {
+        padding: 20px 0px;
+        background: #D3844A;
+        opacity: 0.4;
+    }
+    .home-img {
+        width: 80%;
+        margin: auto;
+    }
+    .home-content {
+        width: 80%;
+        margin: auto;
+    }
+    .home-content .home-icons .home-button {
+        max-height: 55px;
+        max-width: 145px;
+    }
+    .home-content .home-icons .home-button > img {
+        width: 80%;
+        height: 60%;
+    }
+
+    /* card  */
+    .card .card2 {
+        width: 80%;
+        margin: auto;
+    }
+    .card2 .card-pack {
+        flex-direction: column;
+    }
+    .card2 .card-pack .left > span {
+        margin-right: 0px;
+        margin-bottom: 100px;
+    }
+    .card-pack .card-template-left {
+        margin-bottom: 113px;
+    }
+
+    /* .how-it-works  */
+
+    .how-it-works {
+        padding: 95px 10%;
+    }
+    .how-it-works .working {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* client  */
+
+    .client .client-example {
+        width: 80%;
+        margin: auto;
+        height: 100%;
+        margin-bottom: 40px;
+    }
+    .client-example .client-slider {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .client .client-example1,
+    .client .client-example2 {
+        width: 100%;
+    }
+    .client .client-example2 {
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+    .client .client-example .buttons {
+        max-width: 120px;
+        max-height: 60px;
+    }
+    .client .client-example2 span:nth-last-child(2) {
+        margin-bottom: 10px;
+    }
+
+    .client-app {
+        width: 80%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .client-app .client-app-pic,
+    .client-app .client-app-details {
+        width: 100%;
+    }
+    .client-app .client-app-pic {
+        padding-top: 30px;
+    }
+    .client-app .client-app-details span:nth-child(1),
+    .client-app-button {
+        margin-top: 25px;
+    }
+
+    /* footer  */
+
+    .footer {
+        margin: auto;
+        padding-bottom: 0px;
+        padding-top: 56px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .footer .footer-row-5 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Responise layout > 480px */
+
+@media only screen and (max-width: 480px) {
+    .home-content .home-icons {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+    .home-content .home-icons .home-button {
+        margin-bottom: 10px;
+    }
+    .card2 .card-pack {
+        padding: 0px;
+    }
+    .card-pack .card-template {
+        width: 100%;
+    }
+    .card-pack .card-template .card-img .img2 {
+        right: 15%;
+    }
+    .card-pack .card-template .card-img .img1,
+    .card-pack .card-template .card-img .img3 {
+        right: 30%;
+    }
+
+    /* client  */
+    .client .client-example1 {
+        padding: 0px;
+    }
+    .client .client-example1 .client-example-back {
+        width: 100%;
+        height: 280px;
+    }
+    .client .client-example1 .client-example-back img {
+        right: 10%;
+    }
+    .client-app .client-app-details {
+        padding: 0px;
+    }
+    .client-app-button > img {
+        margin-left: 0px;
+    }
+    .client-app-button > img:nth-child(1) {
+        padding-right: 10px;
+    }
+
+    /* footer  */
+
+    .footer .footer-row-2 a,
+    .footer .footer-row-3 a, 
+    .footer .footer-row-4 a{
+        margin-bottom: 5px;
+    }
+    .footer .footer-row-3 {
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5)
+    }
+    .footer .footer-row-2,
+    .footer .footer-row-3, 
+    .footer .footer-row-4{
+        margin-left: 10px;
+    }
 }
